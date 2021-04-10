@@ -1,6 +1,6 @@
-import state from "@/store/modules/hello-world-module/state";
-import mutations from "@/store/modules/hello-world-module/mutations";
-import getters from "@/store/modules/hello-world-module/getters";
+import state from "@/store/modules/web-socket-module/state";
+import mutations from "@/store/modules/web-socket-module/mutations";
+import getters from "@/store/modules/web-socket-module/getters";
 
 export default {
     state,

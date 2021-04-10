@@ -1,4 +1,4 @@
-// hello-world-module GETTERS
+// web-socket-module GETTERS
 
 export default {
     getCount(state){

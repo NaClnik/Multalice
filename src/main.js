@@ -7,13 +7,14 @@ const app = createApp(App);
 
 app.use(store);
 
-app.use(vueNativeSock, "", {
+app.use(vueNativeSock, 'ws://127.0.0.1:8899', {
     store,
     reconnection: true,
-    "reconnectionAttempts": 5,
-    "reconnectionDelay": 3000,
+    reconnectionAttempts: 5,
+    reconnectionDelay: 3000,
     format: 'json'
 })
 
 app.mount('#app');
 
+export default app;

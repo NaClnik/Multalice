@@ -1,7 +1,7 @@
-// hello-world-module-mutations
+// web-socket-module-mutations
 export const INCREMENT = 'INCREMENT';
 
-// web-socket-module mutations.
+// hello-world-module mutations.
 export const SOCKET_ONOPEN = 'SOCKET_ONOPEN'
 export const SOCKET_ONCLOSE = 'SOCKET_ONCLOSE'
 export const SOCKET_ONERROR = 'SOCKET_ONERROR'
