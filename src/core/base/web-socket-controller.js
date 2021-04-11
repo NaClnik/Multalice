@@ -1,7 +1,4 @@
 export class WebSocketController {
-    // Поля класса.
-    _webSocketDataBundle;
-
     // Имитация абстрактного класса.
     // Конструктор.
     constructor() {

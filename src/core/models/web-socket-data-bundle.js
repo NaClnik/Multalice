@@ -1,8 +1,4 @@
 export class WebSocketDataBundle {
-    // Поля класса.
-    _socket;
-    _message;
-
     // Конструктор.
     constructor(socket, message) {
         this._socket = socket;

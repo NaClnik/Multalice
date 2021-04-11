@@ -27,7 +27,6 @@ export default {
     // Receive the message sent by the server
     [mns.SOCKET_ONMESSAGE](state, message) {
         state.socket.message = message;
-        console.log('SOCKET_ONMESSAGE', message);
 
         // Создаём экземпляр бандла вебсокета.
         let webSocketDataBundle = new WebSocketDataBundle(

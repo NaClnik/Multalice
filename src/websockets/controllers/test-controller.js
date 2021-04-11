@@ -1,7 +1,8 @@
 import {WebSocketController} from "@/core/base/web-socket-controller";
 
 export class TestController extends WebSocketController{
-    index(){
-        console.log()
+    // eslint-disable-next-line no-unused-vars
+    index(id){
+        console.log('called from index ', id);
     } // index.
 } // TestController.

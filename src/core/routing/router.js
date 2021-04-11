@@ -6,12 +6,7 @@ import {ClassesWithDependenciesFactory} from "@/core/factories/classes-with-depe
 import {RouteParser} from "@/core/routing/route-parser";
 
 export class Router {
-    // Поля класса.
-    _routesCollection;
-    _uriMatchValidator;
-    _webSocketDataBundle;
-
-    // Конструктор.
+   // Конструктор.
     constructor() {
         this._routesCollection = new RoutesCollection();
         this._uriMatchValidator = new DefaultUriMatchValidator();
@@ -60,7 +55,9 @@ export class Router {
         let routeParser = new RouteParser();
 
         let args = routeParser
-            .getValuesFromPattern(this._webSocketDataBundle.message['route'], matchedRoute.route);
+            .getValuesFromPattern(this._webSocketDataBundle.message['route'], matchedRoute.route, /{[^/]+}/);
+
+        controllerInstance.webSocketDataBundle = this._webSocketDataBundle;
 
         controllerInstance[matchedRoute.actionName](...args);
     } // executeRoute.

@@ -1,9 +1,6 @@
 import {RoutesCollection} from "@/core/routing/routes-collection";
 
 export class RouteDefiner {
-    // Поля класса.
-    _routesCollection;
-
     // Имитация абстрактного класса.
     // Конструктор.
     constructor() {
@@ -13,4 +10,6 @@ export class RouteDefiner {
 
         this._routesCollection = new RoutesCollection();
     } // constructor.
+
+
 } // RouteDefiner.

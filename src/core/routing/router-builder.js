@@ -1,9 +1,6 @@
 import {Router} from "@/core/routing/router";
 
 export class RouterBuilder {
-    // Поля класса.
-    _router;
-
     // Конструктор.
     constructor() {
         this._router = new Router();
@@ -12,7 +9,7 @@ export class RouterBuilder {
     // Методы класса.
     // TODO: Изменить setRoutesCollection на setRouteDefiner.
     setRoutesCollection(routeDefiner){
-        this._router.routesCollection = routeDefiner.routes;
+        this._router.routesCollection = routeDefiner.getRoutes();
         return this;
     } // setRoutesCollection.
 
